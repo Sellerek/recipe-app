@@ -1,33 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  min-width: 500px;
+  background-image: url("food.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  height: 40vh;
+  padding-top: 5vh;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+input, button { 
+  outline: none; 
+}
+
+.search-form {
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.search-bar {
+  width: 50%;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-button {
+  background: #ccc;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+h2 {
+  margin: 20px;
+}
+
+p {
+  font-size: 2rem;
+  padding: 20px;
+}
+
+ul {
+  display: flex;
+  margin: 10px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+li > button {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  border-radius: 2px; 
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 20px;
 }
